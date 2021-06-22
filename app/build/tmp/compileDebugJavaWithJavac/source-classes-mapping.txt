@@ -1,0 +1,10 @@
+com/example/diriodecalorias/BuildConfig.java
+ com.example.diriodecalorias.BuildConfig
+com/example/diriodecalorias/SobreGrupo.java
+ com.example.diriodecalorias.SobreGrupo
+com/example/diriodecalorias/Dicas.java
+ com.example.diriodecalorias.Dicas
+com/example/diriodecalorias/MainActivity.java
+ com.example.diriodecalorias.MainActivity
+com/example/diriodecalorias/Calculos.java
+ com.example.diriodecalorias.Calculos
