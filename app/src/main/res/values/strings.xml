@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Diário de Calorias</string>
+    <string-array name="fatores">
+        <item>Sedentário</item>
+        <item>Levemente ativo</item>
+        <item>Muito ativo</item>
+    </string-array>
 </resources>
