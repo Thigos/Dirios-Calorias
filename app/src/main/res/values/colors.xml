@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <resources>
-
+        <!-- Cor principal -->
+        <color name="corPrincpal">#FF5722</color>
         <!-- Android style -->
         <color name="android_green">#A4C639</color>
         <color name="purple_200">#FFBB86FC</color>
