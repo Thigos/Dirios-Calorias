@@ -5,5 +5,286 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculos">
+    <!--Título-->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="411dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text="Gasto calórico diário"
+        android:textColor="@color/corPrincpal"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!--Radio group do sexo-->
+
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Sexo:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rgSexos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rgSexos"
+        android:layout_width="266dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184">
+        <!--Radio button Feminino-->
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/black"
+            android:text="Feminino"
+            android:textStyle="bold"></RadioButton>
+        <!--Radio button Masculino-->
+        <RadioButton
+            android:id="@+id/rbMas"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/black"
+            android:text="Masculino"
+            android:textAlignment="textStart"
+            android:textStyle="bold"></RadioButton>
+
+    </RadioGroup>
+
+
+    <!--Caixa da idade-->
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Idade:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgViewIdade"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/numIdade"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewIdade"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewIdade"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imgViewIdade"
+        app:layout_constraintTop_toTopOf="@+id/imgViewIdade"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvAnos"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:text="anos"
+        app:layout_constraintBottom_toBottomOf="@+id/numIdade"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewIdade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/numIdade"
+        app:layout_constraintTop_toTopOf="@+id/numIdade"
+        app:layout_constraintVertical_bias="0.954" />
+
+
+
+
+
+    <!--Caixa peso-->
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Peso:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPeso"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPeso"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPeso"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPeso"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPeso"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvKilos"
+        android:layout_width="38dp"
+        android:layout_height="20dp"
+        android:text="kg"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPeso"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPeso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etPeso"
+        app:layout_constraintTop_toTopOf="@+id/etPeso"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <!--Altura-->
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="191dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Altura:"
+        android:textAlignment="center"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/imageViewAltura"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753"
+        app:srcCompat="@drawable/campo" />
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAltura"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAltura"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageViewAltura"
+        app:layout_constraintTop_toBottomOf="@+id/tvAltura"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--Fatores-->
+
+    <TextView
+        android:id="@+id/tvCent"
+        android:layout_width="38dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="4dp"
+        android:text="cm"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAltura"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAltura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etAltura"
+        app:layout_constraintTop_toTopOf="@+id/etAltura"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <TextView
+        android:id="@+id/tvFator"
+        android:layout_width="268dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Fator de atividade:"
+        android:textAlignment="center"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <Spinner
+        android:id="@+id/spFatores"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFator"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--Botão-->
+    <ImageButton
+        android:id="@+id/btCalcular"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:background="@drawable/avancobotao"
+        android:backgroundTint="@color/corPrincpal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
