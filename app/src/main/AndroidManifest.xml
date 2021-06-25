@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/iconenovo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DiárioDeCalorias">
-        <activity android:name=".Calculos2"></activity>
+        <activity
+            android:name=".Resultados"
+            android:label="@string/title_activity_resultados"
+            android:theme="@style/Theme.DiárioDeCalorias.NoActionBar"></activity>
+        <activity android:name=".Calculos2" />
         <activity android:name=".Calculos" />
         <activity android:name=".Dicas" />
         <activity android:name=".SobreGrupo" />
