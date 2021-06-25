@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Diário de Calorias</string>
     <string-array name="fatores">
+        <item>Escolher</item>
         <item>Sedentário</item>
         <item>Levemente ativo</item>
         <item>Muito ativo</item>
     </string-array>
+    <string name="title_activity_resultados">resultados</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="erro_msg">Preencha Todos os Campos!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msgTmb">Hey\n\nSua Taxa Metabólica Basal (TMB) é de:\n</string>
 </resources>
