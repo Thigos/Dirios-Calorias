@@ -20,10 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Intent chamarSobre = new Intent(this, SobreGrupo.class);
         startActivity(chamarSobre);
     }
-    public void irParaDicas(View view) {
-        Intent chamarDicas = new Intent(this, Dicas.class);
-        startActivity(chamarDicas);
-    }
+
     public void irParaCalculos(View view) {
         Intent chamarCalculos = new Intent(this, Calculos.class);
         startActivity(chamarCalculos);
