@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculos2">
-    
-        <!--Titulo-->
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="411dp"
@@ -259,5 +257,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.995" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
