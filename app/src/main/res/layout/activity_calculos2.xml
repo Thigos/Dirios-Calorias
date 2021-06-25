@@ -5,5 +5,259 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculos2">
+    
+        <!--Titulo-->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="411dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text="Calculo Calorico"
+        android:textColor="@color/corPrincpal"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--Caixa cafe-->
+    <TextView
+        android:id="@+id/tvCafe"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Café:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewCafe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgViewCafe"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.220"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/numCafe"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewCafe"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewCafe"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imgViewCafe"
+        app:layout_constraintTop_toTopOf="@+id/imgViewCafe"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvKcal"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:text="Kcal"
+        app:layout_constraintBottom_toBottomOf="@+id/numCafe"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewCafe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/numCafe"
+        app:layout_constraintTop_toTopOf="@+id/numCafe"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <!--Caixa almoco-->
+    <TextView
+        android:id="@+id/tvAlmoco"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Almoço:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAlmoco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewAlmoco"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/numAlmoco"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAlmoco"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAlmoco"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageViewAlmoco"
+        app:layout_constraintTop_toTopOf="@+id/imageViewAlmoco"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvKcalAlmoco"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:text="Kcal"
+        app:layout_constraintBottom_toBottomOf="@+id/numAlmoco"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAlmoco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/numAlmoco"
+        app:layout_constraintTop_toTopOf="@+id/numAlmoco"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <!--Caixa jantazada-->
+    <TextView
+        android:id="@+id/tvJanta"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Janta:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewJanta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewJanta"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.620"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/numJanta"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewJanta"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewJanta"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageViewJanta"
+        app:layout_constraintTop_toTopOf="@+id/imageViewJanta"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvKcalJanta"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:text="Kcal"
+        app:layout_constraintBottom_toBottomOf="@+id/numJanta"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewJanta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/numJanta"
+        app:layout_constraintTop_toTopOf="@+id/numJanta"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <!--Caixa Outros-->
+    <TextView
+        android:id="@+id/tvExterno"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="Outros:"
+        android:textColor="@color/corPrincpal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewExterno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewExterno"
+        android:layout_width="317dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.820"
+        app:srcCompat="@drawable/campo" />
+
+    <EditText
+        android:id="@+id/numExterno"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewExterno"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewExterno"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageViewExterno"
+        app:layout_constraintTop_toTopOf="@+id/imageViewExterno"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvKcalExterno"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:text="Kcal"
+        app:layout_constraintBottom_toBottomOf="@+id/numExterno"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewExterno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/numExterno"
+        app:layout_constraintTop_toTopOf="@+id/numExterno"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageButton
+        android:id="@+id/btCalcular2"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:background="@drawable/avancobotao"
+        android:backgroundTint="@color/corPrincpal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
